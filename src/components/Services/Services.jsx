@@ -48,41 +48,43 @@ const Services = () => {
   return (
     <>
       <span id="services"></span>
-      <div className="py-14 bg-gradient-to-br from-pink-100 via-yellow-50 to-purple-100">
-        <div className="container">
+      <div className="py-14 bg-gradient-to-br from-[#fbeff5] via-[#e18c8c]/10 to-[#da5b5b]/10">
+        <div className="container px-4 sm:pl-14">
           {/* Heading section */}
           <div className="text-center mb-16">
-            <h1 className="text-5xl font-extrabold font-cursive text-pink-600 drop-shadow-sm">
-              Delicious Donuts For You 🍩
+            <h1 className="text-5xl font-extrabold font-cursive text-[#da5b5b] drop-shadow-sm">
+              Delicious Donuts For You 
             </h1>
-            <p className="mt-3 text-lg text-purple-500 font-medium">Freshly made with love and sweetness!</p>
+            <p className="mt-3 text-lg text-[#8b3f3f] font-medium">
+              Freshly made with love and sweetness!
+            </p>
           </div>
 
           {/* Services Card section */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 justify-items-center">
             {ServicesData.map((service) => (
               <div
                 key={service.id}
                 data-aos="fade-up"
                 data-aos-delay={service.aosDelay}
-                className="rounded-3xl bg-white hover:bg-pink-300 hover:text-white relative shadow-2xl duration-300 group max-w-[400px] p-6 flex items-center gap-6 border-4 border-pink-100 hover:border-yellow-200"
+                className="rounded-3xl bg-[#fbeff5] hover:bg-gradient-to-r hover:from-[#e18c8c] hover:to-[#da5b5b] hover:text-white relative shadow-2xl duration-300 group max-w-[400px] p-6 flex items-center gap-6 border-4 border-[#e18c8c]/30 hover:border-[#da5b5b]/50"
               >
                 {/* Image Section */}
                 <img
                   src={service.img}
                   alt={service.name}
-                  className="w-24 h-24 rounded-full ring-4 ring-yellow-300 group-hover:scale-110 duration-300"
+                  className="w-24 h-24 rounded-full ring-4 ring-[#e18c8c] group-hover:scale-110 duration-300"
                 />
 
                 {/* Text Section */}
                 <div className="flex flex-col">
-                  <h1 className="text-2xl font-bold text-pink-600 group-hover:text-white">
+                  <h1 className="text-2xl font-bold text-[#da5b5b] group-hover:text-white">
                     {service.name}
                   </h1>
-                  <p className="text-gray-600 group-hover:text-white duration-300 text-sm mt-1">
+                  <p className="text-[#8b3f3f] group-hover:text-white duration-300 text-sm mt-1">
                     {service.description}
                   </p>
-                  <p className="mt-3 text-lg font-bold text-yellow-500 group-hover:text-white duration-300">
+                  <p className="mt-3 text-lg font-bold text-[#e18c8c] group-hover:text-white duration-300">
                     {service.price}
                   </p>
                 </div>
