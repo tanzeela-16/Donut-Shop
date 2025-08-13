@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&family=Sriracha&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&family=Sriracha&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+@import "tailwindcss";
+
+
+.font-lobster {
+  font-family: 'Lobster', cursive;
+}
+
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.spin {
+  animation: spin 40s linear infinite;
+}
+
+/* smooth scrolling */
+html {
+  scroll-behavior: smooth;
+} 
+
+
