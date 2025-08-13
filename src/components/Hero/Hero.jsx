@@ -1,13 +1,13 @@
 import React from "react";
 import HeroPng from "../../assets/donut3.png";
-import CreamBGwebp from "../../assets/creamBG.webp";
+import CreamBGwebp from "../../assets/creamBG.jpg";
 
 const Hero = () => {
   return (
     <>
-      <div className="min-h-[550px] sm:min-h-[600px] bg-choco flex justify-center items-center text-white relative">
+      <div className="min-h-[550px] sm:min-h-[600px] bg-[#8b3f3f] flex justify-center items-center text-white relative">
         {/* Background Color */}
-        <div className="absolute top-0 left-0 w-full h-full bg-choco z-0"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-[#8b3f3f] z-0"></div>
 
         {/* Background Image */}
         <div
@@ -22,32 +22,40 @@ const Hero = () => {
             height: "100%",
             width: "100%",
             zIndex: "1",
-            opacity: 0.1, // subtle overlay effect
+            opacity: 0.15, // slightly more visible
           }}
         ></div>
 
         <div className="container pb-8 sm:pb-0 relative z-10">
           <div className="grid grid-cols-1 sm:grid-cols-2">
             {/* Text content section */}
-            <div className="flex flex-col justify-center gap-6 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1">
+            <div className="flex flex-col justify-center gap-6 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1 sm:pl-16">
               <h1
                 data-aos="fade-up"
                 data-aos-once="true"
-                className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight text-frost"
+                className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight"
               >
-                Rise and grind, it's{" "}
+                Rise and shine, it’s{" "}
                 <span
                   data-aos="zoom-out"
                   data-aos-delay="300"
-                  className="bg-clip-text text-transparent bg-gradient-to-b from-primary to-accent font-cursive"
+                  className="bg-clip-text text-transparent bg-gradient-to-b from-[#e18c8c] to-[#da5b5b] font-cursive"
                 >
-                  Coffee
+                  Donut
                 </span>{" "}
                 time!
               </h1>
+              <p
+                data-aos="fade-up"
+                data-aos-delay="350"
+                className="text-lg sm:text-xl text-white/80 max-w-lg mx-auto sm:mx-0"
+              >
+                Freshly baked every morning with love, sugar, and a sprinkle of
+                happiness. Grab your favorite donut & start your day right!
+              </p>
               <div data-aos="fade-up" data-aos-delay="400">
-                <button className="bg-gradient-to-r from-primary to-secondary border-2 border-primary hover:scale-105 duration-200 text-choco font-semibold py-2 px-5 rounded-full shadow-md">
-                  Coffee Lovers
+                <button className="bg-gradient-to-r from-[#e18c8c] to-[#da5b5b] border-2 border-[#e18c8c] hover:scale-105 duration-200 text-white font-semibold py-2 px-5 rounded-full shadow-md">
+                  Order Now
                 </button>
               </div>
             </div>
@@ -61,21 +69,21 @@ const Hero = () => {
               <img
                 data-aos-once="true"
                 src={HeroPng}
-                alt="coffee img"
-                className="w-[300px] sm:w-[450px] sm:scale-125 mx-auto drop-shadow-xl"
+                alt="donut img"
+                className="w-[400px] sm:w-[700px] sm:scale-125 mx-auto drop-shadow-xl"
               />
               <div
                 data-aos="fade-left"
-                className="bg-gradient-to-r from-primary to-secondary text-choco font-semibold p-3 rounded-xl absolute top-10 left-10 shadow-md"
+                className="bg-gradient-to-r from-[#e18c8c] to-[#da5b5b] text-white font-semibold p-3 rounded-xl absolute top-10 left-10 shadow-md"
               >
-                <h1>Espresso Haven</h1>
+                <h1>Freshly Baked</h1>
               </div>
               <div
                 data-aos="fade-right"
                 data-aos-offset="0"
-                className="bg-gradient-to-r from-primary to-secondary text-choco font-semibold p-3 rounded-xl absolute bottom-10 right-10 shadow-md"
+                className="bg-gradient-to-r from-[#e18c8c] to-[#da5b5b] text-white font-semibold p-3 rounded-xl absolute bottom-10 right-10 shadow-md"
               >
-                <h1>Best Coffee</h1>
+                <h1>Best Donuts</h1>
               </div>
             </div>
           </div>
