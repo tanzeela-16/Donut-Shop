@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import BgJPG from "../../assets/website/donut-bg.jpg"; // Replace with your donut background
+import BgJPG from "../../assets/website/donut-bg.jpg"; 
 
 const reviews = [
   { name: "Hafsa Saif", rating: 5, comment: "Best donut I’ve ever had! So soft and flavorful." },
