@@ -1,16 +1,37 @@
-<<<<<<< HEAD
-# React + Vite
+# The Daily Donut Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
+This is a responsive, modern website for the daily donut shop. It showcases delicious donuts, services, contact information, and social media links. The site is built with Vite React, Tailwind CSS, and AOS (for animations).
 
-Currently, two official plugins are available:
+## Key Features
+- Hero section with theme-based gradient and image overlay
+- Services section displaying donuts with hover effects
+- Responsive footer with social media links
+- Smooth scroll and theme-aware text colors
+- Fully responsive design for mobile, tablet, and desktop
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Setup Instructions
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/tanzeela-16/Donut-Shop.git
 
-## Expanding the ESLint configuration
+   cd Donut-Shop
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# Donut-Shop
->>>>>>> 0c34d1eb6f8e10b5643bc89e4856fcbeeba3c588
+   npm install
+
+   npm run dev
+
+## Reflection / Key Learnings
+Working on this project has been a valuable learning experience. I gained hands-on experience in React and Tailwind CSS, improving my ability to:
+
+Build responsive, component-based layouts
+Apply theme-aware gradients and overlay effects
+Implement smooth scroll animations and hover effects
+Maintain clean, organized code with reusable components
+
+This project helped me understand the importance of UI consistency, user experience, and design aesthetics, while also reinforcing my front-end development skills.
+
+Author
+Tanzeela Memon
+
+Contact: tanzeelamemon167@gmail.com
